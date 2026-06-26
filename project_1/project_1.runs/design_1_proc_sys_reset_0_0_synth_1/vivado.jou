@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Jun 26 13:43:50 2026
+# Process ID         : 784737
+# Current directory  : /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1
+# Command line       : vivado -log design_1_proc_sys_reset_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_proc_sys_reset_0_0.tcl
+# Log file           : /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1/design_1_proc_sys_reset_0_0.vds
+# Journal file       : /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1/vivado.jou
+# Running On         : emerald
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 26.04 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
+# CPU Frequency      : 801.845 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 65777 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74367 MB
+# Available Virtual  : 64129 MB
+#-----------------------------------------------------------
+source design_1_proc_sys_reset_0_0.tcl -notrace
