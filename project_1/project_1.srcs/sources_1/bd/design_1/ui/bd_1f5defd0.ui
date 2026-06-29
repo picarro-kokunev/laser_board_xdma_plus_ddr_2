@@ -1,31 +1,44 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-238,-538",
+   "Default View_ScaleFactor":"0.608284",
+   "Default View_TopLeft":"-184,-817",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port pcie_clk -pg 1 -lvl 0 -x -10 -y -120 -defaultsOSRD
-preplace port pcie_mgt_0 -pg 1 -lvl 3 -x 1080 -y -160 -defaultsOSRD
-preplace port port-id_pcie_reset_n -pg 1 -lvl 0 -x -10 -y -290 -defaultsOSRD
-preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 190 -y -120 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 190 -y -270 -defaultsOSRD
-preplace inst xdma_0 -pg 1 -lvl 2 -x 570 -y -100 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 570 -y -430 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 2 -x 570 -y -290 -defaultsOSRD
-preplace netloc ext_reset_in_0_1 1 0 1 N -290
-preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 370 -130n
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 1 380 -410n
-preplace netloc xdma_0_axi_aclk 1 0 3 10 -370 390J -530 750
-preplace netloc xdma_0_axi_aresetn 1 1 2 410 30 730
-preplace netloc CLK_IN_D_0_1 1 0 1 N -120
-preplace netloc xdma_0_pcie_mgt 1 2 1 760 -160n
-preplace netloc xdma_0_M_AXI 1 1 2 400 -520 740
-preplace netloc axi_smc_M00_AXI 1 1 2 410 -510 730J
-levelinfo -pg 1 -10 190 570 1080
-pagesize -pg 1 -db -bbox -sgen -240 -690 1210 120
+preplace port pcie_clk -pg 1 -lvl 0 -x -40 -y -120 -defaultsOSRD
+preplace port pcie_mgt_0 -pg 1 -lvl 5 -x 1550 -y -160 -defaultsOSRD
+preplace port DDR3_0 -pg 1 -lvl 5 -x 1550 -y -560 -defaultsOSRD
+preplace port sys_clk -pg 1 -lvl 0 -x -40 -y -570 -defaultsOSRD
+preplace port port-id_pcie_reset_n -pg 1 -lvl 0 -x -40 -y -290 -defaultsOSRD
+preplace port port-id_led_green_0 -pg 1 -lvl 5 -x 1550 -y -270 -defaultsOSRD
+preplace port port-id_led_red_0 -pg 1 -lvl 5 -x 1550 -y -220 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 2 -x 660 -y -80 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 660 -y -230 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 3 -x 1040 -y -100 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 340 -y -560 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 2 -x 660 -y -520 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1390 -y -470 -defaultsOSRD
+preplace inst rst_mig_7series_0_100M -pg 1 -lvl 3 -x 1040 -y -720 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 1 1 460 -570n
+preplace netloc clk_wiz_0_locked 1 1 1 450 -550n
+preplace netloc ext_reset_in_0_1 1 0 2 N -290 450
+preplace netloc mig_7series_0_mmcm_locked 1 2 1 840 -680n
+preplace netloc mig_7series_0_ui_clk 1 2 2 870 -440 1210J
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 1 830 -740n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 230 -340 N -340 850
+preplace netloc rst_mig_7series_0_100M_peripheral_aresetn 1 1 3 490 -420 N -420 1220
+preplace netloc util_ds_buf_0_IBUF_OUT 1 2 1 830 -110n
+preplace netloc xdma_0_axi_aclk 1 1 3 490 -330 NJ -330 1240
+preplace netloc CLK_IN1_D_0_1 1 0 1 NJ -570
+preplace netloc CLK_IN_D_0_1 1 0 2 N -120 480
+preplace netloc axi_smc_M00_AXI 1 1 4 480 -380 NJ -380 NJ -380 1520
+preplace netloc mig_7series_0_DDR3 1 2 3 NJ -560 NJ -560 N
+preplace netloc xdma_0_M_AXI 1 3 1 1230 -500n
+preplace netloc xdma_0_pcie_mgt 1 3 2 1250 -160 N
+levelinfo -pg 1 -40 340 660 1040 1390 1550
+pagesize -pg 1 -db -bbox -sgen -240 -820 1680 120
 "
 }
 {
-   "da_axi4_cnt":"1"
+   "da_axi4_cnt":"2"
 }

@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Jun 26 13:48:33 2026
+//Date        : Mon Jun 29 15:08:37 2026
 //Host        : emerald running 64-bit Ubuntu 26.04 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,15 +10,51 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   (pcie_clk_clk_n,
+   (DDR3_0_addr,
+    DDR3_0_ba,
+    DDR3_0_cas_n,
+    DDR3_0_ck_n,
+    DDR3_0_ck_p,
+    DDR3_0_cke,
+    DDR3_0_cs_n,
+    DDR3_0_dm,
+    DDR3_0_dq,
+    DDR3_0_dqs_n,
+    DDR3_0_dqs_p,
+    DDR3_0_odt,
+    DDR3_0_ras_n,
+    DDR3_0_reset_n,
+    DDR3_0_we_n,
+    led_green_0,
+    led_red_0,
+    pcie_clk_clk_n,
     pcie_clk_clk_p,
     pcie_mgt_0_rxn,
     pcie_mgt_0_rxp,
     pcie_mgt_0_txn,
     pcie_mgt_0_txp,
-    pcie_reset_n);
+    pcie_reset_n,
+    sys_clk_clk_n,
+    sys_clk_clk_p);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 ADDR" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR3_0, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) output [14:0]DDR3_0_addr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 BA" *) output [2:0]DDR3_0_ba;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 CAS_N" *) output DDR3_0_cas_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 CK_N" *) output [0:0]DDR3_0_ck_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 CK_P" *) output [0:0]DDR3_0_ck_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 CKE" *) output [0:0]DDR3_0_cke;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 CS_N" *) output [0:0]DDR3_0_cs_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 DM" *) output [3:0]DDR3_0_dm;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 DQ" *) inout [31:0]DDR3_0_dq;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 DQS_N" *) inout [3:0]DDR3_0_dqs_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 DQS_P" *) inout [3:0]DDR3_0_dqs_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 ODT" *) output [0:0]DDR3_0_odt;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 RAS_N" *) output DDR3_0_ras_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 RESET_N" *) output DDR3_0_reset_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3_0 WE_N" *) output DDR3_0_we_n;
+  output led_green_0;
+  output led_red_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 pcie_clk CLK_N" *) (* X_INTERFACE_MODE = "Slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pcie_clk, CAN_DEBUG false, FREQ_HZ 100000000" *) input [0:0]pcie_clk_clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 pcie_clk CLK_P" *) input [0:0]pcie_clk_clk_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt_0 rxn" *) (* X_INTERFACE_MODE = "Master" *) input [1:0]pcie_mgt_0_rxn;
@@ -26,24 +62,62 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt_0 txn" *) output [1:0]pcie_mgt_0_txn;
   (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt_0 txp" *) output [1:0]pcie_mgt_0_txp;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.PCIE_RESET_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.PCIE_RESET_N, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input pcie_reset_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 sys_clk CLK_N" *) (* X_INTERFACE_MODE = "Slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME sys_clk, CAN_DEBUG false, FREQ_HZ 200000000" *) input sys_clk_clk_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 sys_clk CLK_P" *) input sys_clk_clk_p;
 
-  wire [8:0]axi_smc_M00_AXI_ARADDR;
+  wire [14:0]DDR3_0_addr;
+  wire [2:0]DDR3_0_ba;
+  wire DDR3_0_cas_n;
+  wire [0:0]DDR3_0_ck_n;
+  wire [0:0]DDR3_0_ck_p;
+  wire [0:0]DDR3_0_cke;
+  wire [0:0]DDR3_0_cs_n;
+  wire [3:0]DDR3_0_dm;
+  wire [31:0]DDR3_0_dq;
+  wire [3:0]DDR3_0_dqs_n;
+  wire [3:0]DDR3_0_dqs_p;
+  wire [0:0]DDR3_0_odt;
+  wire DDR3_0_ras_n;
+  wire DDR3_0_reset_n;
+  wire DDR3_0_we_n;
+  wire [29:0]axi_smc_M00_AXI_ARADDR;
+  wire [1:0]axi_smc_M00_AXI_ARBURST;
+  wire [3:0]axi_smc_M00_AXI_ARCACHE;
+  wire [7:0]axi_smc_M00_AXI_ARLEN;
+  wire [0:0]axi_smc_M00_AXI_ARLOCK;
+  wire [2:0]axi_smc_M00_AXI_ARPROT;
+  wire [3:0]axi_smc_M00_AXI_ARQOS;
   wire axi_smc_M00_AXI_ARREADY;
+  wire [2:0]axi_smc_M00_AXI_ARSIZE;
   wire axi_smc_M00_AXI_ARVALID;
-  wire [8:0]axi_smc_M00_AXI_AWADDR;
+  wire [29:0]axi_smc_M00_AXI_AWADDR;
+  wire [1:0]axi_smc_M00_AXI_AWBURST;
+  wire [3:0]axi_smc_M00_AXI_AWCACHE;
+  wire [7:0]axi_smc_M00_AXI_AWLEN;
+  wire [0:0]axi_smc_M00_AXI_AWLOCK;
+  wire [2:0]axi_smc_M00_AXI_AWPROT;
+  wire [3:0]axi_smc_M00_AXI_AWQOS;
   wire axi_smc_M00_AXI_AWREADY;
+  wire [2:0]axi_smc_M00_AXI_AWSIZE;
   wire axi_smc_M00_AXI_AWVALID;
   wire axi_smc_M00_AXI_BREADY;
   wire [1:0]axi_smc_M00_AXI_BRESP;
   wire axi_smc_M00_AXI_BVALID;
-  wire [31:0]axi_smc_M00_AXI_RDATA;
+  wire [255:0]axi_smc_M00_AXI_RDATA;
+  wire axi_smc_M00_AXI_RLAST;
   wire axi_smc_M00_AXI_RREADY;
   wire [1:0]axi_smc_M00_AXI_RRESP;
   wire axi_smc_M00_AXI_RVALID;
-  wire [31:0]axi_smc_M00_AXI_WDATA;
+  wire [255:0]axi_smc_M00_AXI_WDATA;
+  wire axi_smc_M00_AXI_WLAST;
   wire axi_smc_M00_AXI_WREADY;
-  wire [3:0]axi_smc_M00_AXI_WSTRB;
+  wire [31:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
+  wire clk_wiz_0_clk_out1;
+  wire clk_wiz_0_locked;
+  wire mig_7series_0_mmcm_locked;
+  wire mig_7series_0_ui_clk;
+  wire mig_7series_0_ui_clk_sync_rst;
   wire [0:0]pcie_clk_clk_n;
   wire [0:0]pcie_clk_clk_p;
   wire [1:0]pcie_mgt_0_rxn;
@@ -52,6 +126,9 @@ module design_1
   wire [1:0]pcie_mgt_0_txp;
   wire pcie_reset_n;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
+  wire [0:0]rst_mig_7series_0_100M_peripheral_aresetn;
+  wire sys_clk_clk_n;
+  wire sys_clk_clk_p;
   wire [0:0]util_ds_buf_0_IBUF_OUT;
   wire [63:0]xdma_0_M_AXI_ARADDR;
   wire [1:0]xdma_0_M_AXI_ARBURST;
@@ -89,44 +166,38 @@ module design_1
   wire [7:0]xdma_0_M_AXI_WSTRB;
   wire xdma_0_M_AXI_WVALID;
   wire xdma_0_axi_aclk;
-  wire xdma_0_axi_aresetn;
 
-  design_1_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_aclk(xdma_0_axi_aclk),
-        .s_axi_araddr(axi_smc_M00_AXI_ARADDR),
-        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M00_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M00_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M00_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M00_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M00_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M00_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M00_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M00_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M00_AXI_RDATA),
-        .s_axi_rready(axi_smc_M00_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M00_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M00_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M00_AXI_WDATA),
-        .s_axi_wready(axi_smc_M00_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M00_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M00_AXI_WVALID));
-  design_1_axi_smc_0 axi_smc
+  design_1_axi_smc_1 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
+        .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
+        .M00_AXI_arcache(axi_smc_M00_AXI_ARCACHE),
+        .M00_AXI_arlen(axi_smc_M00_AXI_ARLEN),
+        .M00_AXI_arlock(axi_smc_M00_AXI_ARLOCK),
+        .M00_AXI_arprot(axi_smc_M00_AXI_ARPROT),
+        .M00_AXI_arqos(axi_smc_M00_AXI_ARQOS),
         .M00_AXI_arready(axi_smc_M00_AXI_ARREADY),
+        .M00_AXI_arsize(axi_smc_M00_AXI_ARSIZE),
         .M00_AXI_arvalid(axi_smc_M00_AXI_ARVALID),
         .M00_AXI_awaddr(axi_smc_M00_AXI_AWADDR),
+        .M00_AXI_awburst(axi_smc_M00_AXI_AWBURST),
+        .M00_AXI_awcache(axi_smc_M00_AXI_AWCACHE),
+        .M00_AXI_awlen(axi_smc_M00_AXI_AWLEN),
+        .M00_AXI_awlock(axi_smc_M00_AXI_AWLOCK),
+        .M00_AXI_awprot(axi_smc_M00_AXI_AWPROT),
+        .M00_AXI_awqos(axi_smc_M00_AXI_AWQOS),
         .M00_AXI_awready(axi_smc_M00_AXI_AWREADY),
+        .M00_AXI_awsize(axi_smc_M00_AXI_AWSIZE),
         .M00_AXI_awvalid(axi_smc_M00_AXI_AWVALID),
         .M00_AXI_bready(axi_smc_M00_AXI_BREADY),
         .M00_AXI_bresp(axi_smc_M00_AXI_BRESP),
         .M00_AXI_bvalid(axi_smc_M00_AXI_BVALID),
         .M00_AXI_rdata(axi_smc_M00_AXI_RDATA),
+        .M00_AXI_rlast(axi_smc_M00_AXI_RLAST),
         .M00_AXI_rready(axi_smc_M00_AXI_RREADY),
         .M00_AXI_rresp(axi_smc_M00_AXI_RRESP),
         .M00_AXI_rvalid(axi_smc_M00_AXI_RVALID),
         .M00_AXI_wdata(axi_smc_M00_AXI_WDATA),
+        .M00_AXI_wlast(axi_smc_M00_AXI_WLAST),
         .M00_AXI_wready(axi_smc_M00_AXI_WREADY),
         .M00_AXI_wstrb(axi_smc_M00_AXI_WSTRB),
         .M00_AXI_wvalid(axi_smc_M00_AXI_WVALID),
@@ -168,7 +239,71 @@ module design_1
         .S00_AXI_wstrb(xdma_0_M_AXI_WSTRB),
         .S00_AXI_wvalid(xdma_0_M_AXI_WVALID),
         .aclk(xdma_0_axi_aclk),
-        .aresetn(xdma_0_axi_aresetn));
+        .aclk1(mig_7series_0_ui_clk),
+        .aresetn(rst_mig_7series_0_100M_peripheral_aresetn));
+  design_1_clk_wiz_0_0 clk_wiz_0
+       (.clk_in1_n(sys_clk_clk_n),
+        .clk_in1_p(sys_clk_clk_p),
+        .clk_out1(clk_wiz_0_clk_out1),
+        .locked(clk_wiz_0_locked),
+        .resetn(proc_sys_reset_0_peripheral_aresetn));
+  design_1_mig_7series_0_0 mig_7series_0
+       (.aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+        .ddr3_addr(DDR3_0_addr),
+        .ddr3_ba(DDR3_0_ba),
+        .ddr3_cas_n(DDR3_0_cas_n),
+        .ddr3_ck_n(DDR3_0_ck_n),
+        .ddr3_ck_p(DDR3_0_ck_p),
+        .ddr3_cke(DDR3_0_cke),
+        .ddr3_cs_n(DDR3_0_cs_n),
+        .ddr3_dm(DDR3_0_dm),
+        .ddr3_dq(DDR3_0_dq),
+        .ddr3_dqs_n(DDR3_0_dqs_n),
+        .ddr3_dqs_p(DDR3_0_dqs_p),
+        .ddr3_odt(DDR3_0_odt),
+        .ddr3_ras_n(DDR3_0_ras_n),
+        .ddr3_reset_n(DDR3_0_reset_n),
+        .ddr3_we_n(DDR3_0_we_n),
+        .mmcm_locked(mig_7series_0_mmcm_locked),
+        .s_axi_araddr(axi_smc_M00_AXI_ARADDR),
+        .s_axi_arburst(axi_smc_M00_AXI_ARBURST),
+        .s_axi_arcache(axi_smc_M00_AXI_ARCACHE),
+        .s_axi_arid({1'b0,1'b0,1'b0,1'b0}),
+        .s_axi_arlen(axi_smc_M00_AXI_ARLEN),
+        .s_axi_arlock(axi_smc_M00_AXI_ARLOCK),
+        .s_axi_arprot(axi_smc_M00_AXI_ARPROT),
+        .s_axi_arqos(axi_smc_M00_AXI_ARQOS),
+        .s_axi_arready(axi_smc_M00_AXI_ARREADY),
+        .s_axi_arsize(axi_smc_M00_AXI_ARSIZE),
+        .s_axi_arvalid(axi_smc_M00_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M00_AXI_AWADDR),
+        .s_axi_awburst(axi_smc_M00_AXI_AWBURST),
+        .s_axi_awcache(axi_smc_M00_AXI_AWCACHE),
+        .s_axi_awid({1'b0,1'b0,1'b0,1'b0}),
+        .s_axi_awlen(axi_smc_M00_AXI_AWLEN),
+        .s_axi_awlock(axi_smc_M00_AXI_AWLOCK),
+        .s_axi_awprot(axi_smc_M00_AXI_AWPROT),
+        .s_axi_awqos(axi_smc_M00_AXI_AWQOS),
+        .s_axi_awready(axi_smc_M00_AXI_AWREADY),
+        .s_axi_awsize(axi_smc_M00_AXI_AWSIZE),
+        .s_axi_awvalid(axi_smc_M00_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M00_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M00_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M00_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M00_AXI_RDATA),
+        .s_axi_rlast(axi_smc_M00_AXI_RLAST),
+        .s_axi_rready(axi_smc_M00_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M00_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M00_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M00_AXI_WDATA),
+        .s_axi_wlast(axi_smc_M00_AXI_WLAST),
+        .s_axi_wready(axi_smc_M00_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M00_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M00_AXI_WVALID),
+        .sys_clk_i(clk_wiz_0_clk_out1),
+        .sys_rst(clk_wiz_0_locked),
+        .ui_clk(mig_7series_0_ui_clk),
+        .ui_clk_sync_rst(mig_7series_0_ui_clk_sync_rst));
   design_1_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
@@ -176,13 +311,19 @@ module design_1
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(proc_sys_reset_0_peripheral_aresetn),
         .slowest_sync_clk(xdma_0_axi_aclk));
+  design_1_rst_mig_7series_0_100M_0 rst_mig_7series_0_100M
+       (.aux_reset_in(1'b1),
+        .dcm_locked(mig_7series_0_mmcm_locked),
+        .ext_reset_in(mig_7series_0_ui_clk_sync_rst),
+        .mb_debug_sys_rst(1'b0),
+        .peripheral_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+        .slowest_sync_clk(mig_7series_0_ui_clk));
   design_1_util_ds_buf_0_0 util_ds_buf_0
        (.IBUF_DS_N(pcie_clk_clk_n),
         .IBUF_DS_P(pcie_clk_clk_p),
         .IBUF_OUT(util_ds_buf_0_IBUF_OUT));
   design_1_xdma_0_0 xdma_0
        (.axi_aclk(xdma_0_axi_aclk),
-        .axi_aresetn(xdma_0_axi_aresetn),
         .cfg_mgmt_addr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .cfg_mgmt_byte_enable({1'b0,1'b0,1'b0,1'b0}),
         .cfg_mgmt_read(1'b0),

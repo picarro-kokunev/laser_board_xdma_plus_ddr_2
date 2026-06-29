@@ -133,8 +133,8 @@ input wire [1 : 0] pci_exp_rxp;
 input wire [1 : 0] pci_exp_rxn;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.axi_aclk CLK" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.axi_aclk, ASSOCIATED_BUSIF M_AXI:S_AXI_B:M_AXI_LITE:S_AXI_LITE:M_AXI_BYPASS:M_AXI_B:S_AXIS_C2H_0:S_AXIS_C2H_1:S_AXIS_C2H_2:S_AXIS_C2H_3:M_AXIS_H2C_0:M_AXIS_H2C_1:M_AXIS_H2C_2:M_AXIS_H2C_3:sc0_ats_m_axis_cq:sc0_ats_m_axis_rc:sc0_ats_s_axis_cc:sc0_ats_s_axis_rq:sc1_ats_m_axis_cq:sc1_ats_m_axis_rc:sc1_ats_s_axis_cc:sc1_ats_s_axis_rq:cxs_tx:cxs_rx:atspri_s_axis_rq:atspri_m_axis_cq, ASSOCIATED_RESET axi_aresetn, FREQ_HZ 62500000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design\
-_1_xdma_0_0_axi_aclk, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.axi_aclk, ASSOCIATED_BUSIF M_AXI:S_AXI_B:M_AXI_LITE:S_AXI_LITE:M_AXI_BYPASS:M_AXI_B:S_AXIS_C2H_0:S_AXIS_C2H_1:S_AXIS_C2H_2:S_AXIS_C2H_3:M_AXIS_H2C_0:M_AXIS_H2C_1:M_AXIS_H2C_2:M_AXIS_H2C_3:sc0_ats_m_axis_cq:sc0_ats_m_axis_rc:sc0_ats_s_axis_cc:sc0_ats_s_axis_rq:sc1_ats_m_axis_cq:sc1_ats_m_axis_rc:sc1_ats_s_axis_cc:sc1_ats_s_axis_rq:cxs_tx:cxs_rx:atspri_s_axis_rq:atspri_m_axis_cq, ASSOCIATED_RESET axi_aresetn, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN desig\
+n_1_xdma_0_0_axi_aclk, INSERT_VIP 0" *)
 output wire axi_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.axi_aresetn RST" *)
 (* X_INTERFACE_MODE = "master" *)
@@ -146,8 +146,8 @@ output wire msi_enable;
 output wire [2 : 0] msi_vector_width;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWREADY" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_BURST.VALUE_SRC CONSTANT, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 62500000, ID_WIDTH 4, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN design_1_xdma_0_0_axi_aclk, NUM\
-_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_BURST.VALUE_SRC CONSTANT, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 4, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN design_1_xdma_0_0_axi_aclk, NU\
+M_READ_THREADS 2, NUM_WRITE_THREADS 2, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 input wire m_axi_awready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WREADY" *)
 input wire m_axi_wready;
@@ -241,15 +241,15 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .TL_LEGACY_MODE_ENABLE("false"),
     .PCIE_BLK_LOCN(0),
     .PL_LINK_CAP_MAX_LINK_WIDTH(2),
-    .PL_LINK_CAP_MAX_LINK_SPEED(1),
+    .PL_LINK_CAP_MAX_LINK_SPEED(2),
     .REF_CLK_FREQ(0),
     .DRP_CLK_SEL(0),
     .FREE_RUN_FREQ(0),
     .AXI_ADDR_WIDTH(64),
     .AXI_DATA_WIDTH(64),
     .CORE_CLK_FREQ(2),
-    .PLL_TYPE(0),
-    .USER_CLK_FREQ(0),
+    .PLL_TYPE(2),
+    .USER_CLK_FREQ(1),
     .SILICON_REV("Pre-Production"),
     .PIPE_SIM("FALSE"),
     .VDM_EN("FALSE"),
@@ -261,11 +261,11 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .EXT_STARTUP_PRIMITIVE("false"),
     .ENH_XDMA_EN("FALSE"),
     .PF0_VENDOR_ID(16'H10EE),
-    .PF0_DEVICE_ID(16'H7012),
+    .PF0_DEVICE_ID(16'H7022),
     .PF0_REVISION_ID(8'H00),
     .PF0_SUBSYSTEM_VENDOR_ID(16'H10EE),
     .PF0_SUBSYSTEM_ID(16'H0007),
-    .PF0_CLASS_CODE(24'H070001),
+    .PF0_CLASS_CODE(24'H058000),
     .PF1_VENDOR_ID(16'H10EE),
     .PF1_DEVICE_ID(16'H1041),
     .PF1_REVISION_ID(8'H00),
@@ -312,8 +312,8 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .XDMA_PCIE_64BIT_EN("xdma_pcie_64bit_en"),
     .XDMA_AXILITE_MASTER("FALSE"),
     .XDMA_AXIST_BYPASS("FALSE"),
-    .XDMA_RNUM_CHNL(1),
-    .XDMA_WNUM_CHNL(1),
+    .XDMA_RNUM_CHNL(2),
+    .XDMA_WNUM_CHNL(2),
     .XDMA_AXILITE_SLAVE("FALSE"),
     .XDMA_NUM_USR_IRQ(1),
     .XDMA_RNUM_RIDS(32),
@@ -325,7 +325,7 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .XDMA_NUM_PCIE_TAG(64),
     .EN_AXI_MASTER_IF("TRUE"),
     .EN_WCHNL_0("TRUE"),
-    .EN_WCHNL_1("FALSE"),
+    .EN_WCHNL_1("TRUE"),
     .EN_WCHNL_2("FALSE"),
     .EN_WCHNL_3("FALSE"),
     .EN_WCHNL_4("FALSE"),
@@ -333,7 +333,7 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .EN_WCHNL_6("FALSE"),
     .EN_WCHNL_7("FALSE"),
     .EN_RCHNL_0("TRUE"),
-    .EN_RCHNL_1("FALSE"),
+    .EN_RCHNL_1("TRUE"),
     .EN_RCHNL_2("FALSE"),
     .EN_RCHNL_3("FALSE"),
     .EN_RCHNL_4("FALSE"),
@@ -515,8 +515,8 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .VF_BARLITE_INT_PF1(6'H01),
     .VF_BARLITE_INT_PF2(6'H01),
     .VF_BARLITE_INT_PF3(6'H01),
-    .C_C2H_NUM_CHNL(1),
-    .C_H2C_NUM_CHNL(1),
+    .C_C2H_NUM_CHNL(2),
+    .C_H2C_NUM_CHNL(2),
     .H2C_XDMA_CHNL(8'H0F),
     .C2H_XDMA_CHNL(8'H0F),
     .AXISTEN_IF_ENABLE_MSG_ROUTE(18'H00000),
@@ -570,7 +570,7 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .pci_exp_rxn(pci_exp_rxn),
     .cfg_subsys_vend_id(16'H10EE),
     .cfg_vend_id(16'H10EE),
-    .cfg_dev_id_pf0(16'H7012),
+    .cfg_dev_id_pf0(16'H7022),
     .cfg_dev_id_pf1(16'H1041),
     .cfg_dev_id_pf2(16'H1040),
     .cfg_dev_id_pf3(16'H1039),
