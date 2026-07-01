@@ -60,6 +60,7 @@ set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 5
 set_param xicom.use_bs_reader 1
 set_param general.usePosixSpawnForFork 1
+set_param bd.open.in_stealth_mode 1
 set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -99,19 +100,13 @@ set_property used_in_implementation false [get_files -all /home/kokunev/data/git
 set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/bd_6f02_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/bd_6f02_psr_aclk1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/bd_6f02_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/bd_6f02_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/bd_6f02_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_10/bd_6f02_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_11/bd_6f02_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_12/bd_6f02_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_13/bd_6f02_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_board.xdc]
+set_property used_in_synthesis false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_us_0/design_1_axi_interconnect_0_imp_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_us_0/design_1_axi_interconnect_0_imp_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_us_0/design_1_axi_interconnect_0_imp_auto_us_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_cc_0/design_1_axi_interconnect_0_imp_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_cc_0/design_1_axi_interconnect_0_imp_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_cc_0/design_1_axi_interconnect_0_imp_auto_cc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

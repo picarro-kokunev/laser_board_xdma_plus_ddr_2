@@ -36,56 +36,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_cl
 # IP: bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_mig_7series_0_0 || ORIG_REF_NAME==design_1_mig_7series_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_smc_1/design_1_axi_smc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_1 || ORIG_REF_NAME==design_1_axi_smc_1} -quiet] -quiet
-
-# Block Designs: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/bd_6f02.bd
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr0_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/bd_6f02_psr_aclk_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/bd_6f02_psr_aclk1_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_4/bd_6f02_s00mmu_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_5/bd_6f02_s00tr_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_6/bd_6f02_s00sic_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/bd_6f02_s00a2s_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/bd_6f02_sarn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/bd_6f02_srn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_10/bd_6f02_sawn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_11/bd_6f02_swn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_12/bd_6f02_sbn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_13/bd_6f02_m00s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_14/bd_6f02_m00e_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
 # IP: bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_mig_7series_0_100M_0 || ORIG_REF_NAME==design_1_rst_mig_7series_0_100M_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_interconnect_0_0/design_1_axi_interconnect_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_0_0 || ORIG_REF_NAME==design_1_axi_interconnect_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_us_0/design_1_axi_interconnect_0_imp_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_0_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_interconnect_0_imp_auto_us_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_cc_0/design_1_axi_interconnect_0_imp_auto_cc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_0_imp_auto_cc_0 || ORIG_REF_NAME==design_1_axi_interconnect_0_imp_auto_cc_0} -quiet] -quiet
 
 # XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc
 
@@ -134,35 +95,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0_ooc.xdc
 
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr0_0_board.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_2/bd_6f02_psr_aclk_0_board.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_3/bd_6f02_psr_aclk1_0_board.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/bd_6f02_s00a2s_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/bd_6f02_sarn_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/bd_6f02_srn_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_10/bd_6f02_sawn_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_11/bd_6f02_swn_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_12/bd_6f02_sbn_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_13/bd_6f02_m00s2a_0_ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc
-
-# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/smartconnect.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_smc_1 || ORIG_REF_NAME==design_1_axi_smc_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
 # XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_mig_7series_0_100M_0 || ORIG_REF_NAME==design_1_rst_mig_7series_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_us_0/design_1_axi_interconnect_0_imp_auto_us_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_0_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_interconnect_0_imp_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_us_0/design_1_axi_interconnect_0_imp_auto_us_0_ooc.xdc
+
+# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_cc_0/design_1_axi_interconnect_0_imp_auto_cc_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_0_imp_auto_cc_0 || ORIG_REF_NAME==design_1_axi_interconnect_0_imp_auto_cc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_interconnect_0_imp_auto_cc_0/design_1_axi_interconnect_0_imp_auto_cc_0_ooc.xdc
 
 # XDC: /home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc

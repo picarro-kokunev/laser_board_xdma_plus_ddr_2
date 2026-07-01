@@ -41,9 +41,7 @@ set_property BITSTREAM.CONFIG.CONFIGRATE 50 [current_design]
 # Compress bitstream to minimize flash footprint (Optional)
 set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 
-set_property LOC GTPE2_CHANNEL_X0Y4 [get_cells {design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtp_channel.gtpe2_channel_i}]
 set_property PACKAGE_PIN B8 [get_ports {pcie_mgt_0_rxp[0]}]
-set_property LOC GTPE2_CHANNEL_X0Y5 [get_cells {design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtp_channel.gtpe2_channel_i}]
 set_property PACKAGE_PIN D11 [get_ports {pcie_mgt_0_rxp[1]}]
 #set_property PACKAGE_PIN B10 [get_ports {pcie_mgt_0_rxp[2]}]
 #set_property PACKAGE_PIN D9 [get_ports {pcie_mgt_0_rxp[3]}]

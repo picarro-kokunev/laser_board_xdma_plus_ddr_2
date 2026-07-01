@@ -58,8 +58,6 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   input wire [0:0] pcie_clk_clk_p,
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire pcie_reset_n,
-  (* X_INTERFACE_IGNORE = "true" *)
   input wire [1:0] pcie_mgt_0_rxn,
   (* X_INTERFACE_IGNORE = "true" *)
   input wire [1:0] pcie_mgt_0_rxp,
@@ -98,19 +96,20 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   output wire [0:0] DDR3_0_odt,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire led_green_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire led_red_0,
-  (* X_INTERFACE_IGNORE = "true" *)
   input wire sys_clk_clk_n,
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire sys_clk_clk_p
+  input wire sys_clk_clk_p,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire pcie_reset_n,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire led_green_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire led_red_0
 );
 
   design_1 inst (
     .pcie_clk_clk_n(pcie_clk_clk_n),
     .pcie_clk_clk_p(pcie_clk_clk_p),
-    .pcie_reset_n(pcie_reset_n),
     .pcie_mgt_0_rxn(pcie_mgt_0_rxn),
     .pcie_mgt_0_rxp(pcie_mgt_0_rxp),
     .pcie_mgt_0_txn(pcie_mgt_0_txn),
@@ -130,10 +129,11 @@ module design_1_sv (
     .DDR3_0_cs_n(DDR3_0_cs_n),
     .DDR3_0_dm(DDR3_0_dm),
     .DDR3_0_odt(DDR3_0_odt),
-    .led_green_0(led_green_0),
-    .led_red_0(led_red_0),
     .sys_clk_clk_n(sys_clk_clk_n),
-    .sys_clk_clk_p(sys_clk_clk_p)
+    .sys_clk_clk_p(sys_clk_clk_p),
+    .pcie_reset_n(pcie_reset_n),
+    .led_green_0(led_green_0),
+    .led_red_0(led_red_0)
   );
 
 endmodule
