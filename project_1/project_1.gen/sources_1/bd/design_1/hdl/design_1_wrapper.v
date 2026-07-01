@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Jun 30 16:57:05 2026
+//Date        : Tue Jun 30 20:04:23 2026
 //Host        : emerald running 64-bit Ubuntu 26.04 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -36,7 +36,8 @@ module design_1_wrapper
     pcie_mgt_0_txp,
     pcie_reset_n,
     sys_clk_clk_n,
-    sys_clk_clk_p);
+    sys_clk_clk_p,
+    unused_0);
   output [14:0]DDR3_0_addr;
   output [2:0]DDR3_0_ba;
   output DDR3_0_cas_n;
@@ -52,8 +53,8 @@ module design_1_wrapper
   output DDR3_0_ras_n;
   output DDR3_0_reset_n;
   output DDR3_0_we_n;
-  output led_green_0;
-  output led_red_0;
+  output [0:0]led_green_0;
+  output [0:0]led_red_0;
   input [0:0]pcie_clk_clk_n;
   input [0:0]pcie_clk_clk_p;
   input [1:0]pcie_mgt_0_rxn;
@@ -63,6 +64,7 @@ module design_1_wrapper
   input pcie_reset_n;
   input sys_clk_clk_n;
   input sys_clk_clk_p;
+  input [0:0]unused_0;
 
   wire [14:0]DDR3_0_addr;
   wire [2:0]DDR3_0_ba;
@@ -79,8 +81,8 @@ module design_1_wrapper
   wire DDR3_0_ras_n;
   wire DDR3_0_reset_n;
   wire DDR3_0_we_n;
-  wire led_green_0;
-  wire led_red_0;
+  wire [0:0]led_green_0;
+  wire [0:0]led_red_0;
   wire [0:0]pcie_clk_clk_n;
   wire [0:0]pcie_clk_clk_p;
   wire [1:0]pcie_mgt_0_rxn;
@@ -90,6 +92,7 @@ module design_1_wrapper
   wire pcie_reset_n;
   wire sys_clk_clk_n;
   wire sys_clk_clk_p;
+  wire [0:0]unused_0;
 
   design_1 design_1_i
        (.DDR3_0_addr(DDR3_0_addr),
@@ -117,5 +120,6 @@ module design_1_wrapper
         .pcie_mgt_0_txp(pcie_mgt_0_txp),
         .pcie_reset_n(pcie_reset_n),
         .sys_clk_clk_n(sys_clk_clk_n),
-        .sys_clk_clk_p(sys_clk_clk_p));
+        .sys_clk_clk_p(sys_clk_clk_p),
+        .unused_0(unused_0));
 endmodule

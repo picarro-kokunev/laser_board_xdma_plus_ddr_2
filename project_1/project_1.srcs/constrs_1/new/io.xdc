@@ -11,6 +11,11 @@ set_property PACKAGE_PIN A20 [get_ports led_red_0]
 set_property IOSTANDARD LVCMOS33 [get_ports led_green_0]
 set_property IOSTANDARD LVCMOS33 [get_ports led_red_0]
 
+# Unused pin
+set_property PACKAGE_PIN B15 [get_ports unused_0]
+set_property IOSTANDARD LVCMOS33 [get_ports unused_0]
+
+
 # PCIE reset is not connected on laser board
 # H13 is trig4 connection
 # H13 is tied to PCIE reset by manual board rework

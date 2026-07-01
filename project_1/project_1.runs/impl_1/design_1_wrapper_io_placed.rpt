@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date                      : Tue Jun 30 17:02:02 2026
+| Date                      : Tue Jun 30 20:09:36 2026
 | Host                      : emerald running 64-bit Ubuntu 26.04 LTS
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            86 |
+|            87 |
 +---------------+
 
 
@@ -54,8 +54,8 @@ Table of Contents
 | A17        |                   | High Range | VCCO_16                      | VCCO          |             |      16 |            |      |                     |                      |    3.30 |            |           |          |          |                  |              |                   |              |
 | A18        |                   | High Range | IO_L17P_T2_16                | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | A19        |                   | High Range | IO_L17N_T2_16                | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
-| A20        | led_red_0         | High Range | IO_L16N_T2_16                | TRISTATE      | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
-| A21        | led_green_0       | High Range | IO_L21N_T3_DQS_16            | TRISTATE      | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
+| A20        | led_red_0[0]      | High Range | IO_L16N_T2_16                | TRISTATE      | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
+| A21        | led_green_0[0]    | High Range | IO_L21N_T3_DQS_16            | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | A22        |                   |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
 | AA1        | DDR3_0_addr[13]   | High Range | IO_L7P_T1_34                 | OUTPUT        | SSTL15      |      34 |            | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | AA2        |                   |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
@@ -115,7 +115,7 @@ Table of Contents
 | B12        |                   |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
 | B13        |                   | High Range | IO_L8N_T1_16                 | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | B14        |                   | High Range | VCCO_16                      | VCCO          |             |      16 |            |      |                     |                      |    3.30 |            |           |          |          |                  |              |                   |              |
-| B15        |                   | High Range | IO_L7P_T1_16                 | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
+| B15        | unused_0[0]       | High Range | IO_L7P_T1_16                 | INPUT         | LVCMOS33    |      16 |            |      |                     |                 NONE |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | B16        |                   | High Range | IO_L7N_T1_16                 | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | B17        |                   | High Range | IO_L11P_T1_SRCC_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | B18        |                   | High Range | IO_L11N_T1_SRCC_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |

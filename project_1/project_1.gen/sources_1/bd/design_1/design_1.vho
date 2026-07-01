@@ -77,8 +77,9 @@ COMPONENT design_1
     sys_clk_clk_n : IN STD_LOGIC;
     sys_clk_clk_p : IN STD_LOGIC;
     pcie_reset_n : IN STD_LOGIC;
-    led_green_0 : OUT STD_LOGIC;
-    led_red_0 : OUT STD_LOGIC
+    led_green_0 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    unused_0 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    led_red_0 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -114,6 +115,7 @@ your_instance_name : design_1
     sys_clk_clk_p => sys_clk_clk_p,
     pcie_reset_n => pcie_reset_n,
     led_green_0 => led_green_0,
+    unused_0 => unused_0,
     led_red_0 => led_red_0
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------

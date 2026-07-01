@@ -102,9 +102,11 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   input wire pcie_reset_n,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire led_green_0,
+  output wire [0:0] led_green_0,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire led_red_0
+  input wire [0:0] unused_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire [0:0] led_red_0
 );
 
   design_1 inst (
@@ -133,6 +135,7 @@ module design_1_sv (
     .sys_clk_clk_p(sys_clk_clk_p),
     .pcie_reset_n(pcie_reset_n),
     .led_green_0(led_green_0),
+    .unused_0(unused_0),
     .led_red_0(led_red_0)
   );
 

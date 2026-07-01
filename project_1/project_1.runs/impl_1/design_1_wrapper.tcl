@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -111,7 +110,7 @@ set rc [catch {
   set_param chipscope.maxJobs 5
   set_param xicom.use_bs_reader 1
   set_param general.usePosixSpawnForFork 1
-  set_param bd.open.in_stealth_mode 1
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-3120877-emerald/incrSyn
   set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tfgg484-2
