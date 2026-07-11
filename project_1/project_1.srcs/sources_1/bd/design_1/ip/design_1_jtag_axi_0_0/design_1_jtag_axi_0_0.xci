@@ -8,18 +8,18 @@
     "gen_directory": "../../../../../../project_1.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0",
     "parameters": {
       "component_parameters": {
-        "RD_TXN_QUEUE_LENGTH": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "WR_TXN_QUEUE_LENGTH": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "RD_TXN_QUEUE_LENGTH": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "WR_TXN_QUEUE_LENGTH": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "M_HAS_BURST": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "PROTOCOL": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "PROTOCOL": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "M_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "M_AXI_ADDR_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "M_AXI_ID_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "design_1_jtag_axi_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "RD_TXN_QUEUE_LENGTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "WR_TXN_QUEUE_LENGTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "RD_TXN_QUEUE_LENGTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "WR_TXN_QUEUE_LENGTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "M_AXI_ID_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "M_AXI_ADDR_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "FAMILY": [ { "value": "artix7", "resolve_type": "generated", "usage": "all" } ],
@@ -211,5 +211,5 @@
       }
     }
   },
-  "checksum": "0f49a6bc"
+  "checksum": "5a1c4c64"
 }

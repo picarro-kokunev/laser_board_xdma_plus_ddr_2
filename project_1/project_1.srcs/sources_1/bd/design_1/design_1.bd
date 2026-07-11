@@ -20,7 +20,8 @@
       "axi_gpio_0": "",
       "axi_smc": "",
       "axi_smc_1": "",
-      "ilvector_logic_1": ""
+      "ilvector_logic_1": "",
+      "system_ila_0": ""
     },
     "interface_ports": {
       "pcie_clk": {
@@ -356,6 +357,18 @@
           "PF3_DEVICE_ID_mqdma": {
             "value": "9322"
           },
+          "enable_ltssm_dbg": {
+            "value": "true"
+          },
+          "enable_mark_debug": {
+            "value": "true"
+          },
+          "enable_pcie_debug_ports": {
+            "value": "True"
+          },
+          "mode_selection": {
+            "value": "Advanced"
+          },
           "pf0_class_code_base": {
             "value": "05"
           },
@@ -475,7 +488,7 @@
             "value": "Custom"
           },
           "XML_INPUT_FILE": {
-            "value": "mig_a.prj"
+            "value": "mig_b.prj"
           }
         },
         "interface_ports": {
@@ -504,6 +517,17 @@
         "xci_path": "ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0.xci",
         "inst_hier_path": "jtag_axi_0",
         "has_run_ip_tcl": "true",
+        "parameters": {
+          "PROTOCOL": {
+            "value": "0"
+          },
+          "RD_TXN_QUEUE_LENGTH": {
+            "value": "16"
+          },
+          "WR_TXN_QUEUE_LENGTH": {
+            "value": "16"
+          }
+        },
         "interface_ports": {
           "M_AXI": {
             "bd_attributes": {
@@ -627,6 +651,9 @@
         "inst_hier_path": "axi_smc_1",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "NUM_MI": {
+            "value": "1"
+          },
           "NUM_SI": {
             "value": "1"
           }
@@ -707,6 +734,33 @@
             "value": "1"
           }
         }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "22",
+        "xci_name": "design_1_system_ila_0_0",
+        "xci_path": "ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci",
+        "inst_hier_path": "system_ila_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_ADV_TRIGGER": {
+            "value": "true"
+          },
+          "C_DATA_DEPTH": {
+            "value": "2048"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXI": {
+            "mode": "Monitor",
+            "monitor_type": "SlaveType",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -725,7 +779,8 @@
       "axi_smc_1_M00_AXI": {
         "interface_ports": [
           "axi_smc_1/M00_AXI",
-          "mig_7series_0/S_AXI"
+          "mig_7series_0/S_AXI",
+          "system_ila_0/SLOT_0_AXI"
         ]
       },
       "axi_smc_M00_AXI": {
@@ -795,7 +850,8 @@
           "mig_7series_0/ui_clk",
           "rst_mig_7series_0_100M/slowest_sync_clk",
           "jtag_axi_0/aclk",
-          "axi_smc_1/aclk"
+          "axi_smc_1/aclk",
+          "system_ila_0/clk"
         ]
       },
       "mig_7series_0_ui_clk_sync_rst": {
@@ -815,7 +871,8 @@
           "rst_mig_7series_0_100M/peripheral_aresetn",
           "mig_7series_0/aresetn",
           "jtag_axi_0/aresetn",
-          "axi_smc_1/aresetn"
+          "axi_smc_1/aresetn",
+          "system_ila_0/resetn"
         ]
       },
       "util_ds_buf_0_IBUF_OUT": {

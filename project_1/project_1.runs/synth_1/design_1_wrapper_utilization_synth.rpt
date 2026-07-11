@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Tue Jun 30 20:07:56 2026
+| Date         : Thu Jul  9 11:17:28 2026
 | Host         : emerald running 64-bit Ubuntu 26.04 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -31,17 +31,17 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| Slice LUTs*                | 28247 |     0 |          0 |     63400 | 44.55 |
-|   LUT as Logic             | 24253 |     0 |          0 |     63400 | 38.25 |
-|   LUT as Memory            |  3994 |     0 |          0 |     19000 | 21.02 |
-|     LUT as Distributed RAM |  3662 |     0 |            |           |       |
-|     LUT as Shift Register  |   332 |     0 |            |           |       |
-| Slice Registers            | 29390 |     0 |          0 |    126800 | 23.18 |
-|   Register as Flip Flop    | 29390 |     0 |          0 |    126800 | 23.18 |
+| Slice LUTs*                | 35549 |     0 |          0 |     63400 | 56.07 |
+|   LUT as Logic             | 28706 |     0 |          0 |     63400 | 45.28 |
+|   LUT as Memory            |  6843 |     0 |          0 |     19000 | 36.02 |
+|     LUT as Distributed RAM |  3822 |     0 |            |           |       |
+|     LUT as Shift Register  |  3021 |     0 |            |           |       |
+| Slice Registers            | 41244 |     0 |          0 |    126800 | 32.53 |
+|   Register as Flip Flop    | 41244 |     0 |          0 |    126800 | 32.53 |
 |   Register as Latch        |     0 |     0 |          0 |    126800 |  0.00 |
-| F7 Muxes                   |   332 |     0 |          0 |     31700 |  1.05 |
-| F8 Muxes                   |    29 |     0 |          0 |     15850 |  0.18 |
-| Unique Control Sets        |  1018 |       |          0 |     15850 |  6.42 |
+| F7 Muxes                   |   592 |     0 |          0 |     31700 |  1.87 |
+| F8 Muxes                   |    64 |     0 |          0 |     15850 |  0.40 |
+| Unique Control Sets        |  1272 |       |          0 |     15850 |  8.03 |
 +----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -63,8 +63,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 139   |          Yes |           - |          Set |
 | 143   |          Yes |           - |        Reset |
-| 396   |          Yes |         Set |            - |
-| 28712 |          Yes |       Reset |            - |
+| 410   |          Yes |         Set |            - |
+| 40552 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -74,11 +74,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |   27 |     0 |          0 |       135 | 20.00 |
-|   RAMB36/FIFO*    |   22 |     0 |          0 |       135 | 16.30 |
-|     RAMB36E1 only |   22 |       |            |           |       |
-|   RAMB18          |   10 |     0 |          0 |       270 |  3.70 |
-|     RAMB18E1 only |   10 |       |            |           |       |
+| Block RAM Tile    |   65 |     0 |          0 |       135 | 48.15 |
+|   RAMB36/FIFO*    |   59 |     0 |          0 |       135 | 43.70 |
+|     RAMB36E1 only |   59 |       |            |           |       |
+|   RAMB18          |   12 |     0 |          0 |       270 |  4.44 |
+|     RAMB18E1 only |   12 |       |            |           |       |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -165,32 +165,32 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +--------------------------+-------+----------------------+
 |         Ref Name         |  Used |  Functional Category |
 +--------------------------+-------+----------------------+
-| FDRE                     | 28712 |         Flop & Latch |
-| LUT6                     |  8923 |                  LUT |
-| LUT3                     |  7012 |                  LUT |
-| RAMD32                   |  5114 |   Distributed Memory |
-| LUT5                     |  4869 |                  LUT |
-| LUT4                     |  4290 |                  LUT |
-| LUT2                     |  2686 |                  LUT |
-| LUT1                     |  1873 |                  LUT |
-| RAMS32                   |  1663 |   Distributed Memory |
-| CARRY4                   |  1042 |           CarryLogic |
-| FDSE                     |   396 |         Flop & Latch |
-| MUXF7                    |   332 |                MuxFx |
-| SRLC32E                  |   274 |   Distributed Memory |
-| RAMD64E                  |   176 |   Distributed Memory |
+| FDRE                     | 40552 |         Flop & Latch |
+| LUT6                     | 10277 |                  LUT |
+| LUT3                     |  7466 |                  LUT |
+| LUT4                     |  6189 |                  LUT |
+| LUT5                     |  5385 |                  LUT |
+| RAMD32                   |  5164 |   Distributed Memory |
+| LUT2                     |  3809 |                  LUT |
+| SRL16E                   |  2632 |   Distributed Memory |
+| SRLC32E                  |  2275 |   Distributed Memory |
+| LUT1                     |  2010 |                  LUT |
+| RAMS32                   |  1681 |   Distributed Memory |
+| CARRY4                   |  1626 |           CarryLogic |
+| MUXF7                    |   592 |                MuxFx |
+| FDSE                     |   410 |         Flop & Latch |
+| RAMD64E                  |   304 |   Distributed Memory |
 | FDCE                     |   143 |         Flop & Latch |
 | FDPE                     |   139 |         Flop & Latch |
 | OSERDESE2                |    64 |                   IO |
-| SRL16E                   |    58 |   Distributed Memory |
+| MUXF8                    |    64 |                MuxFx |
+| RAMB36E1                 |    59 |         Block Memory |
 | OBUFT                    |    37 |                   IO |
 | ISERDESE2                |    32 |                   IO |
 | IDELAYE2                 |    32 |                   IO |
 | IBUF_INTERMDISABLE       |    32 |                   IO |
 | OBUF                     |    30 |                   IO |
-| MUXF8                    |    29 |                MuxFx |
-| RAMB36E1                 |    22 |         Block Memory |
-| RAMB18E1                 |    10 |         Block Memory |
+| RAMB18E1                 |    12 |         Block Memory |
 | BUFG                     |    10 |                Clock |
 | RAMS64E                  |     9 |   Distributed Memory |
 | ODDR                     |     9 |                   IO |
@@ -204,6 +204,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | IN_FIFO                  |     4 |                   IO |
 | IDDR                     |     4 |                   IO |
 | MMCME2_ADV               |     3 |                Clock |
+| SRLC16E                  |     2 |   Distributed Memory |
 | PHY_CONTROL              |     2 |                   IO |
 | PHASER_REF               |     2 |                   IO |
 | OBUFDS                   |     2 |                   IO |

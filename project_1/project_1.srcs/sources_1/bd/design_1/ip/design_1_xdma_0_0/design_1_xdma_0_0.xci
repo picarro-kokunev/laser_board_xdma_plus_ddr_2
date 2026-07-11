@@ -10,7 +10,7 @@
       "component_parameters": {
         "Component_Name": [ { "value": "design_1_xdma_0_0", "resolve_type": "user", "usage": "all" } ],
         "functional_mode": [ { "value": "DMA", "resolve_type": "user", "enabled": false, "usage": "all" } ],
-        "mode_selection": [ { "value": "Basic", "resolve_type": "user", "usage": "all" } ],
+        "mode_selection": [ { "value": "Advanced", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "device_port_type": [ { "value": "PCI_Express_Endpoint_device", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "pcie_blk_locn": [ { "value": "X0Y0", "resolve_type": "user", "usage": "all" } ],
         "pl_link_cap_max_link_width": [ { "value": "X2", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
@@ -132,7 +132,7 @@
         "type1_membase_memlimit_enable": [ { "value": "Disabled", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "type1_prefetchable_membase_memlimit": [ { "value": "Disabled", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "enable_jtag_dbg": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "enable_ltssm_dbg": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "enable_ltssm_dbg": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "enable_ibert": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "axibar_num": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "axibar_0": [ { "value": "0x0000000000000000", "resolve_type": "user", "usage": "all" } ],
@@ -824,8 +824,8 @@
         "dsc_bypass_wr_out": [ { "value": "0000", "resolve_type": "user", "usage": "all" } ],
         "num_queues": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "enable_auto_rxeq": [ { "value": "False", "resolve_type": "user", "usage": "all" } ],
-        "enable_pcie_debug_ports": [ { "value": "False", "resolve_type": "user", "usage": "all" } ],
-        "enable_pcie_debug": [ { "value": "False", "resolve_type": "user", "usage": "all" } ],
+        "enable_pcie_debug_ports": [ { "value": "True", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "enable_pcie_debug": [ { "value": "False", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "enable_pcie_debug_axi4_st": [ { "value": "False", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "axisten_if_enable_msg_route": [ { "value": "27FFF", "resolve_type": "user", "usage": "all" } ],
         "en_axi_mm_mqdma": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
@@ -865,7 +865,7 @@
         "runbit_fix": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "axsize_byte_access_en": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "enable_lane_reversal": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "enable_mark_debug": [ { "value": "false", "resolve_type": "user", "usage": "all" } ],
+        "enable_mark_debug": [ { "value": "true", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "master_cal_only": [ { "value": "false", "resolve_type": "user", "usage": "all" } ],
         "enable_multi_pcie": [ { "value": "false", "resolve_type": "user", "usage": "all" } ],
         "rbar_enable": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
@@ -1102,7 +1102,7 @@
         "EN_DEBUG_PORTS": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
         "VU9P_BOARD": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
         "ENABLE_JTAG_DBG": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
-        "ENABLE_LTSSM_DBG": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
+        "ENABLE_LTSSM_DBG": [ { "value": "TRUE", "resolve_type": "generated", "usage": "all" } ],
         "ENABLE_IBERT": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
         "MM_SLAVE_EN": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "DMA_EN": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -1217,7 +1217,7 @@
         "XDMA_ST_INFINITE_DESC_EXDES": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
         "EXT_XVC_VSEC_ENABLE": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
         "ACS_EXT_CAP_ENABLE": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
-        "EN_PCIE_DEBUG_PORTS": [ { "value": "FALSE", "resolve_type": "generated", "usage": "all" } ],
+        "EN_PCIE_DEBUG_PORTS": [ { "value": "TRUE", "resolve_type": "generated", "usage": "all" } ],
         "MULTQ_EN": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "DMA_MM": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "DMA_ST": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -1369,7 +1369,15 @@
         "cfg_mgmt_read": [ { "direction": "in", "driver_value": "0" } ],
         "cfg_mgmt_read_data": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "cfg_mgmt_read_write_done": [ { "direction": "out" } ],
-        "cfg_mgmt_type1_cfg_reg_access": [ { "direction": "in", "driver_value": "0" } ]
+        "cfg_mgmt_type1_cfg_reg_access": [ { "direction": "in", "driver_value": "0" } ],
+        "cfg_negotiated_width_o": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "cfg_current_speed_o": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
+        "cfg_ltssm_state_o": [ { "direction": "out", "size_left": "5", "size_right": "0" } ],
+        "cfg_err_cor_o": [ { "direction": "out" } ],
+        "cfg_err_fatal_o": [ { "direction": "out" } ],
+        "cfg_err_nonfatal_o": [ { "direction": "out" } ],
+        "cfg_local_error_o": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "cfg_local_error_valid_o": [ { "direction": "out" } ]
       },
       "interfaces": {
         "CLK.SYS_CLK": {
@@ -1548,6 +1556,21 @@
             "txn": [ { "physical_name": "pci_exp_txn" } ],
             "txp": [ { "physical_name": "pci_exp_txp" } ]
           }
+        },
+        "pcie_debug_ports": {
+          "vlnv": "xilinx.com:display_xdma:pcie_debug:1.0",
+          "abstraction_type": "xilinx.com:display_xdma:pcie_debug_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "cfg_current_speed": [ { "physical_name": "cfg_current_speed_o" } ],
+            "cfg_err_cor": [ { "physical_name": "cfg_err_cor_o" } ],
+            "cfg_err_fatal": [ { "physical_name": "cfg_err_fatal_o" } ],
+            "cfg_err_nonfatal": [ { "physical_name": "cfg_err_nonfatal_o" } ],
+            "cfg_local_error": [ { "physical_name": "cfg_local_error_o" } ],
+            "cfg_local_error_valid": [ { "physical_name": "cfg_local_error_valid_o" } ],
+            "cfg_ltssm_state": [ { "physical_name": "cfg_ltssm_state_o" } ],
+            "cfg_negotiated_width": [ { "physical_name": "cfg_negotiated_width_o" } ]
+          }
         }
       },
       "address_spaces": {
@@ -1600,5 +1623,5 @@
       }
     }
   },
-  "checksum": "ef10fbdd"
+  "checksum": "9e90ebfd"
 }

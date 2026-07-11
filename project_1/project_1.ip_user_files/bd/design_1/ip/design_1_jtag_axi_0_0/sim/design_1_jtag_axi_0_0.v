@@ -182,8 +182,8 @@ input wire m_axi_rvalid;
 output wire m_axi_rready;
 
   jtag_axi_v1_2_23_jtag_axi #(
-    .RD_TXN_QUEUE_LENGTH(1),
-    .WR_TXN_QUEUE_LENGTH(1),
+    .RD_TXN_QUEUE_LENGTH(16),
+    .WR_TXN_QUEUE_LENGTH(16),
     .M_AXI_ID_WIDTH(1),
     .M_AXI_ADDR_WIDTH(32),
     .FAMILY("artix7"),

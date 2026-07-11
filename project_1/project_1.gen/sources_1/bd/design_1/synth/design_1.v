@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Jun 30 20:04:22 2026
+//Date        : Thu Jul  9 11:12:14 2026
 //Host        : emerald running 64-bit Ubuntu 26.04 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR3_0_addr,
     DDR3_0_ba,
@@ -82,39 +82,39 @@ module design_1
   wire DDR3_0_ras_n;
   wire DDR3_0_reset_n;
   wire DDR3_0_we_n;
-  wire [29:0]axi_smc_1_M00_AXI_ARADDR;
-  wire [1:0]axi_smc_1_M00_AXI_ARBURST;
-  wire [3:0]axi_smc_1_M00_AXI_ARCACHE;
-  wire [7:0]axi_smc_1_M00_AXI_ARLEN;
-  wire [0:0]axi_smc_1_M00_AXI_ARLOCK;
-  wire [2:0]axi_smc_1_M00_AXI_ARPROT;
-  wire [3:0]axi_smc_1_M00_AXI_ARQOS;
-  wire axi_smc_1_M00_AXI_ARREADY;
-  wire [2:0]axi_smc_1_M00_AXI_ARSIZE;
-  wire axi_smc_1_M00_AXI_ARVALID;
-  wire [29:0]axi_smc_1_M00_AXI_AWADDR;
-  wire [1:0]axi_smc_1_M00_AXI_AWBURST;
-  wire [3:0]axi_smc_1_M00_AXI_AWCACHE;
-  wire [7:0]axi_smc_1_M00_AXI_AWLEN;
-  wire [0:0]axi_smc_1_M00_AXI_AWLOCK;
-  wire [2:0]axi_smc_1_M00_AXI_AWPROT;
-  wire [3:0]axi_smc_1_M00_AXI_AWQOS;
-  wire axi_smc_1_M00_AXI_AWREADY;
-  wire [2:0]axi_smc_1_M00_AXI_AWSIZE;
-  wire axi_smc_1_M00_AXI_AWVALID;
-  wire axi_smc_1_M00_AXI_BREADY;
-  wire [1:0]axi_smc_1_M00_AXI_BRESP;
-  wire axi_smc_1_M00_AXI_BVALID;
-  wire [255:0]axi_smc_1_M00_AXI_RDATA;
-  wire axi_smc_1_M00_AXI_RLAST;
-  wire axi_smc_1_M00_AXI_RREADY;
-  wire [1:0]axi_smc_1_M00_AXI_RRESP;
-  wire axi_smc_1_M00_AXI_RVALID;
-  wire [255:0]axi_smc_1_M00_AXI_WDATA;
-  wire axi_smc_1_M00_AXI_WLAST;
-  wire axi_smc_1_M00_AXI_WREADY;
-  wire [31:0]axi_smc_1_M00_AXI_WSTRB;
-  wire axi_smc_1_M00_AXI_WVALID;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARADDR" *) (* DONT_TOUCH *) wire [29:0]axi_smc_1_M00_AXI_ARADDR;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARBURST" *) (* DONT_TOUCH *) wire [1:0]axi_smc_1_M00_AXI_ARBURST;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARCACHE" *) (* DONT_TOUCH *) wire [3:0]axi_smc_1_M00_AXI_ARCACHE;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARLEN" *) (* DONT_TOUCH *) wire [7:0]axi_smc_1_M00_AXI_ARLEN;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARLOCK" *) (* DONT_TOUCH *) wire [0:0]axi_smc_1_M00_AXI_ARLOCK;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARPROT" *) (* DONT_TOUCH *) wire [2:0]axi_smc_1_M00_AXI_ARPROT;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARQOS" *) (* DONT_TOUCH *) wire [3:0]axi_smc_1_M00_AXI_ARQOS;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARREADY" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_ARREADY;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARSIZE" *) (* DONT_TOUCH *) wire [2:0]axi_smc_1_M00_AXI_ARSIZE;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 ARVALID" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_ARVALID;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWADDR" *) (* DONT_TOUCH *) wire [29:0]axi_smc_1_M00_AXI_AWADDR;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWBURST" *) (* DONT_TOUCH *) wire [1:0]axi_smc_1_M00_AXI_AWBURST;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWCACHE" *) (* DONT_TOUCH *) wire [3:0]axi_smc_1_M00_AXI_AWCACHE;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWLEN" *) (* DONT_TOUCH *) wire [7:0]axi_smc_1_M00_AXI_AWLEN;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWLOCK" *) (* DONT_TOUCH *) wire [0:0]axi_smc_1_M00_AXI_AWLOCK;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWPROT" *) (* DONT_TOUCH *) wire [2:0]axi_smc_1_M00_AXI_AWPROT;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWQOS" *) (* DONT_TOUCH *) wire [3:0]axi_smc_1_M00_AXI_AWQOS;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWREADY" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_AWREADY;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWSIZE" *) (* DONT_TOUCH *) wire [2:0]axi_smc_1_M00_AXI_AWSIZE;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 AWVALID" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_AWVALID;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 BREADY" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_BREADY;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 BRESP" *) (* DONT_TOUCH *) wire [1:0]axi_smc_1_M00_AXI_BRESP;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 BVALID" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_BVALID;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 RDATA" *) (* DONT_TOUCH *) wire [255:0]axi_smc_1_M00_AXI_RDATA;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 RLAST" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_RLAST;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 RREADY" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_RREADY;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 RRESP" *) (* DONT_TOUCH *) wire [1:0]axi_smc_1_M00_AXI_RRESP;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 RVALID" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_RVALID;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 WDATA" *) (* DONT_TOUCH *) wire [255:0]axi_smc_1_M00_AXI_WDATA;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 WLAST" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_WLAST;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 WREADY" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_WREADY;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 WSTRB" *) (* DONT_TOUCH *) wire [31:0]axi_smc_1_M00_AXI_WSTRB;
+  (* CONN_BUS_INFO = "axi_smc_1_M00_AXI xilinx.com:interface:aximm:1.0 AXI4 WVALID" *) (* DONT_TOUCH *) wire axi_smc_1_M00_AXI_WVALID;
   wire [8:0]axi_smc_M00_AXI_ARADDR;
   wire axi_smc_M00_AXI_ARREADY;
   wire axi_smc_M00_AXI_ARVALID;
@@ -487,6 +487,42 @@ module design_1
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
         .slowest_sync_clk(mig_7series_0_ui_clk));
+  design_1_system_ila_0_0 system_ila_0
+       (.SLOT_0_AXI_araddr(axi_smc_1_M00_AXI_ARADDR),
+        .SLOT_0_AXI_arburst(axi_smc_1_M00_AXI_ARBURST),
+        .SLOT_0_AXI_arcache(axi_smc_1_M00_AXI_ARCACHE),
+        .SLOT_0_AXI_arlen(axi_smc_1_M00_AXI_ARLEN),
+        .SLOT_0_AXI_arlock(axi_smc_1_M00_AXI_ARLOCK),
+        .SLOT_0_AXI_arprot(axi_smc_1_M00_AXI_ARPROT),
+        .SLOT_0_AXI_arqos(axi_smc_1_M00_AXI_ARQOS),
+        .SLOT_0_AXI_arready(axi_smc_1_M00_AXI_ARREADY),
+        .SLOT_0_AXI_arsize(axi_smc_1_M00_AXI_ARSIZE),
+        .SLOT_0_AXI_arvalid(axi_smc_1_M00_AXI_ARVALID),
+        .SLOT_0_AXI_awaddr(axi_smc_1_M00_AXI_AWADDR),
+        .SLOT_0_AXI_awburst(axi_smc_1_M00_AXI_AWBURST),
+        .SLOT_0_AXI_awcache(axi_smc_1_M00_AXI_AWCACHE),
+        .SLOT_0_AXI_awlen(axi_smc_1_M00_AXI_AWLEN),
+        .SLOT_0_AXI_awlock(axi_smc_1_M00_AXI_AWLOCK),
+        .SLOT_0_AXI_awprot(axi_smc_1_M00_AXI_AWPROT),
+        .SLOT_0_AXI_awqos(axi_smc_1_M00_AXI_AWQOS),
+        .SLOT_0_AXI_awready(axi_smc_1_M00_AXI_AWREADY),
+        .SLOT_0_AXI_awsize(axi_smc_1_M00_AXI_AWSIZE),
+        .SLOT_0_AXI_awvalid(axi_smc_1_M00_AXI_AWVALID),
+        .SLOT_0_AXI_bready(axi_smc_1_M00_AXI_BREADY),
+        .SLOT_0_AXI_bresp(axi_smc_1_M00_AXI_BRESP),
+        .SLOT_0_AXI_bvalid(axi_smc_1_M00_AXI_BVALID),
+        .SLOT_0_AXI_rdata(axi_smc_1_M00_AXI_RDATA),
+        .SLOT_0_AXI_rlast(axi_smc_1_M00_AXI_RLAST),
+        .SLOT_0_AXI_rready(axi_smc_1_M00_AXI_RREADY),
+        .SLOT_0_AXI_rresp(axi_smc_1_M00_AXI_RRESP),
+        .SLOT_0_AXI_rvalid(axi_smc_1_M00_AXI_RVALID),
+        .SLOT_0_AXI_wdata(axi_smc_1_M00_AXI_WDATA),
+        .SLOT_0_AXI_wlast(axi_smc_1_M00_AXI_WLAST),
+        .SLOT_0_AXI_wready(axi_smc_1_M00_AXI_WREADY),
+        .SLOT_0_AXI_wstrb(axi_smc_1_M00_AXI_WSTRB),
+        .SLOT_0_AXI_wvalid(axi_smc_1_M00_AXI_WVALID),
+        .clk(mig_7series_0_ui_clk),
+        .resetn(rst_mig_7series_0_100M_peripheral_aresetn));
   design_1_util_ds_buf_0_0 util_ds_buf_0
        (.IBUF_DS_N(pcie_clk_clk_n),
         .IBUF_DS_P(pcie_clk_clk_p),

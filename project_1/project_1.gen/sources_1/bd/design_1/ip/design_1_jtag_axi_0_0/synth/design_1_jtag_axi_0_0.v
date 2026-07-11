@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "jtag_axi_v1_2_23_jtag_axi,Vivado 2025.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_jtag_axi_0_0,jtag_axi_v1_2_23_jtag_axi,{}" *)
-(* CORE_GENERATION_INFO = "design_1_jtag_axi_0_0,jtag_axi_v1_2_23_jtag_axi,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=jtag_axi,x_ipVersion=1.2,x_ipCoreRevision=23,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RD_TXN_QUEUE_LENGTH=1,WR_TXN_QUEUE_LENGTH=1,M_AXI_ID_WIDTH=1,M_AXI_ADDR_WIDTH=32,FAMILY=artix7,M_AXI_DATA_WIDTH=32,M_HAS_BURST=1,PROTOCOL=0}" *)
+(* CORE_GENERATION_INFO = "design_1_jtag_axi_0_0,jtag_axi_v1_2_23_jtag_axi,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=jtag_axi,x_ipVersion=1.2,x_ipCoreRevision=23,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RD_TXN_QUEUE_LENGTH=16,WR_TXN_QUEUE_LENGTH=16,M_AXI_ID_WIDTH=1,M_AXI_ADDR_WIDTH=32,FAMILY=artix7,M_AXI_DATA_WIDTH=32,M_HAS_BURST=1,PROTOCOL=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_jtag_axi_0_0 (
   aclk,
@@ -183,8 +183,8 @@ input wire m_axi_rvalid;
 output wire m_axi_rready;
 
   jtag_axi_v1_2_23_jtag_axi #(
-    .RD_TXN_QUEUE_LENGTH(1),
-    .WR_TXN_QUEUE_LENGTH(1),
+    .RD_TXN_QUEUE_LENGTH(16),
+    .WR_TXN_QUEUE_LENGTH(16),
     .M_AXI_ID_WIDTH(1),
     .M_AXI_ADDR_WIDTH(32),
     .FAMILY("artix7"),
