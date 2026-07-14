@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.runs/impl_1'
+HD_PWD='/home/kokunev/data/git_root/laser_board_xdma_plus_ddr_2/project_1/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
