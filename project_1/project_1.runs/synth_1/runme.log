@@ -7,7 +7,7 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Tue Jul 14 14:28:16 2026
+  **** Start of session at: Wed Jul 15 09:42:29 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -27,9 +27,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 933768
+INFO: [Synth 8-7075] Helper process launched with PID 1375643
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2331.160 ; gain = 482.188 ; free physical = 20296 ; free virtual = 50723
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2331.129 ; gain = 481.188 ; free physical = 22725 ; free virtual = 53005
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'RdDeQ', assumed default net type 'wire' [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr_2/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d6c9/hdl/verilog/axidma_fifo.vh:179]
 INFO: [Synth 8-11241] undeclared symbol 'cfg_config_space_enable', assumed default net type 'wire' [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr_2/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:4347]
@@ -499,18 +499,18 @@ WARNING: [Synth 8-7129] Port pipe_rx3_polarity in module design_1_xdma_0_0_pcie2
 WARNING: [Synth 8-7129] Port pipe_tx3_compliance in module design_1_xdma_0_0_pcie2_ip_gt_top is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 3861.660 ; gain = 2012.688 ; free physical = 13320 ; free virtual = 43784
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 3861.629 ; gain = 2011.688 ; free physical = 15749 ; free virtual = 46066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 3861.660 ; gain = 2012.688 ; free physical = 13327 ; free virtual = 43791
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 3861.629 ; gain = 2011.688 ; free physical = 15748 ; free virtual = 46065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 3861.660 ; gain = 2012.688 ; free physical = 13327 ; free virtual = 43791
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 3861.629 ; gain = 2011.688 ; free physical = 15748 ; free virtual = 46065
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3861.660 ; gain = 0.000 ; free physical = 13356 ; free virtual = 43807
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3861.629 ; gain = 0.000 ; free physical = 15768 ; free virtual = 46071
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 2874 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -589,7 +589,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 73 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4415.879 ; gain = 0.000 ; free physical = 13054 ; free virtual = 43505
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4416.879 ; gain = 0.000 ; free physical = 15345 ; free virtual = 45648
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2119 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 1888 instances
@@ -599,40 +599,40 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 96 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.57 . Memory (MB): peak = 4415.914 ; gain = 0.000 ; free physical = 13049 ; free virtual = 43500
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.57 . Memory (MB): peak = 4416.914 ; gain = 0.000 ; free physical = 15344 ; free virtual = 45649
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 4415.914 ; gain = 2566.941 ; free physical = 13064 ; free virtual = 43516
+Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 4416.914 ; gain = 2566.973 ; free physical = 15342 ; free virtual = 45645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 4423.883 ; gain = 2574.910 ; free physical = 13064 ; free virtual = 43516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15341 ; free virtual = 45645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 4423.883 ; gain = 2574.910 ; free physical = 13062 ; free virtual = 43514
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:27 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15343 ; free virtual = 45646
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 4423.883 ; gain = 2574.910 ; free physical = 13003 ; free virtual = 43478
+Finished Doing Graph Differ : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15266 ; free virtual = 45592
 ---------------------------------------------------------------------------------
-bd_f60c__GC0mig_7series_v4_2_ddr_byte_lane__parameterized5__GC0ila_v6_2_19_ila_core__GB1xdma_v4_2_2_udma_top__GCB0ila_v6_2_19_ila_core__GB0mig_7series_v4_2_ddr_phy_top__GC0design_1_xdma_0_0_core_top__GC0mig_7series_v4_2_mc__4bd_a878__GB0mig_7series_v4_2_ddr_mc_phy_wrapper__GC0bd_a878__GB1design_1_mig_7series_0_0_mig__GC0xdma_v4_2_2_udma_wrapper__GC0ila_v6_2_19_ila__GC0mig_7series_v4_2_ddr_mc_phy__GC0xdma_v4_2_2_vul_rdwr__4design_1_clk_wiz_0_0_clk_wiz__GCxdma_v4_2_2_udma_top__GCB1xdma_v4_2_2_vul_rdwr__parameterized0__4mig_7series_v4_2_ddr_phy_4lanes__parameterized0__GC0design_1__GC0xdma_v4_2_2_udma_top__GCB2xdma_v4_2_2_vul_top__GB2mig_7series_v4_2_memc_ui_top_axi__GC0---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 5253.484 ; gain = 3404.512 ; free physical = 12134 ; free virtual = 42609
+mig_7series_v4_2_mcbd_f60c__GC0ila_v6_2_19_ila_core__GB1mig_7series_v4_2_ddr_phy_top__GC0ila_v6_2_19_ila_core__GB0xdma_v4_2_2_udma_top__GCB2xdma_v4_2_2_vul_top__GB2mig_7series_v4_2_ddr_mc_phy_wrapper__GC0bd_a878__GB0xdma_v4_2_2_udma_top__GCB0mig_7series_v4_2_ddr_mc_phy__GC0design_1__GC0xdma_v4_2_2_vul_rdwrmig_7series_v4_2_memc_ui_top_axi__GC0design_1_clk_wiz_0_0_clk_wiz__GCdesign_1_xdma_0_0_core_top__GC0bd_a878__GB1mig_7series_v4_2_ddr_byte_lane__parameterized5__GC0design_1_mig_7series_0_0_mig__GC0xdma_v4_2_2_udma_wrapper__GC0ila_v6_2_19_ila__GC0xdma_v4_2_2_vul_rdwr__parameterized0xdma_v4_2_2_udma_top__GCB1mig_7series_v4_2_ddr_phy_4lanes__parameterized0__GC0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:01:31 ; elapsed = 00:01:40 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15267 ; free virtual = 45593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:38 ; elapsed = 00:01:47 . Memory (MB): peak = 5253.484 ; gain = 3404.512 ; free physical = 12161 ; free virtual = 42636
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15255 ; free virtual = 45581
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Mimic Skeleton from Reference
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Mimic Skeleton from Reference : Time (s): cpu = 00:01:42 ; elapsed = 00:01:52 . Memory (MB): peak = 5253.484 ; gain = 3404.512 ; free physical = 12146 ; free virtual = 42621
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:01:38 ; elapsed = 00:01:47 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15232 ; free virtual = 45560
 ---------------------------------------------------------------------------------
 
 
@@ -652,9 +652,9 @@ Report Incremental Modules:
 +-+----------------+------------+----------+----------+
 
 
-   Full Design Size (number of cells) : 352338
+   Full Design Size (number of cells) : 352750
    Resynthesis Design Size (number of cells) : 70
-   Resynth % : 0.0199,  Reuse % : 99.9801
+   Resynth % : 0.0198,  Reuse % : 99.9802
 
 3. Reference Checkpoint Information
 
@@ -679,7 +679,7 @@ Report RTL Partitions:
 |1     |bd_a878__GB0_#REUSE#                                         |           1|         0|
 |2     |bd_a878__GB1_#REUSE#                                         |           1|         0|
 |3     |design_1_clk_wiz_0_0_clk_wiz__GC_#REUSE#                     |           1|         0|
-|4     |mig_7series_v4_2_mc__4_#REUSE#                               |           1|         0|
+|4     |mig_7series_v4_2_mc_#REUSE#                                  |           1|         0|
 |5     |mig_7series_v4_2_ddr_byte_lane__parameterized5__GC0_#REUSE#  |           1|         0|
 |6     |mig_7series_v4_2_ddr_phy_4lanes__parameterized0__GC0_#REUSE# |           1|         0|
 |7     |mig_7series_v4_2_ddr_mc_phy__GC0_#REUSE#                     |           1|         0|
@@ -691,8 +691,8 @@ Report RTL Partitions:
 |13    |ila_v6_2_19_ila_core__GB1_#REUSE#                            |           1|         0|
 |14    |ila_v6_2_19_ila__GC0_#REUSE#                                 |           1|         0|
 |15    |bd_f60c__GC0_#REUSE#                                         |           1|         0|
-|16    |xdma_v4_2_2_vul_rdwr__4_#REUSE#                              |           1|         0|
-|17    |xdma_v4_2_2_vul_rdwr__parameterized0__4_#REUSE#              |           1|         0|
+|16    |xdma_v4_2_2_vul_rdwr_#REUSE#                                 |           1|         0|
+|17    |xdma_v4_2_2_vul_rdwr__parameterized0_#REUSE#                 |           1|         0|
 |18    |xdma_v4_2_2_vul_top__GB2_#REUSE#                             |           1|         0|
 |19    |xdma_v4_2_2_udma_top__GCB0_#REUSE#                           |           1|         0|
 |20    |xdma_v4_2_2_udma_top__GCB1_#REUSE#                           |           1|         0|
@@ -721,13 +721,13 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:02:04 . Memory (MB): peak = 5253.484 ; gain = 3404.512 ; free physical = 11534 ; free virtual = 42493
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 4424.883 ; gain = 2574.941 ; free physical = 15014 ; free virtual = 45559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Stitch Unchanged AreaOpt Partitions
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:02:25 ; elapsed = 00:02:13 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 12578 ; free virtual = 43533
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:01:46 ; elapsed = 00:01:56 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 16127 ; free virtual = 46673
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -741,26 +741,26 @@ WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 89
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/inverted_reset_inferred/i_0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:35 ; elapsed = 00:02:23 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 12224 ; free virtual = 43593
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:02:02 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15707 ; free virtual = 46401
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:37 ; elapsed = 00:02:25 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 12201 ; free virtual = 43571
+Finished Timing Optimization : Time (s): cpu = 00:01:53 ; elapsed = 00:02:03 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15706 ; free virtual = 46401
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:02:26 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 12201 ; free virtual = 43571
+Finished Technology Mapping : Time (s): cpu = 00:01:53 ; elapsed = 00:02:03 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15710 ; free virtual = 46404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Stitch Unchanged Partitions
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Stitch Unchanged Partitions : Time (s): cpu = 00:02:41 ; elapsed = 00:02:30 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 12209 ; free virtual = 43579
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:01:55 ; elapsed = 00:02:05 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15714 ; free virtual = 46408
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -784,139 +784,139 @@ INFO: [Synth 8-7052] The timing for the instance design_1_i/xdma_0/inst/ram_top/
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8338]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8338]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8338]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8338]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd:8117]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:2061]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1978]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:2063]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:2035]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1522]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/laser_board_xdma_plus_ddr/project_1/project_1.gen/sources_1/bd/design_1/ipshared/7f86/hdl/jtag_axi_v1_2_syn_rfs.v:1432]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:399]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:385]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:379]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:55 ; elapsed = 00:02:44 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11854 ; free virtual = 43626
+Finished IO Insertion : Time (s): cpu = 00:02:03 ; elapsed = 00:02:14 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15587 ; free virtual = 46418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:55 ; elapsed = 00:02:44 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11854 ; free virtual = 43625
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:03 ; elapsed = 00:02:14 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15587 ; free virtual = 46418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:58 ; elapsed = 00:02:47 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11855 ; free virtual = 43627
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:02:17 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15619 ; free virtual = 46450
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:59 ; elapsed = 00:02:48 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11855 ; free virtual = 43627
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:02:18 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15620 ; free virtual = 46451
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:00 ; elapsed = 00:02:49 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11852 ; free virtual = 43623
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:08 ; elapsed = 00:02:19 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15628 ; free virtual = 46459
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:00 ; elapsed = 00:02:49 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11850 ; free virtual = 43621
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:08 ; elapsed = 00:02:19 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15629 ; free virtual = 46460
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -936,7 +936,7 @@ Report Cell Usage:
 |2     |BUFGCTRL                       |     1|
 |3     |BUFH                           |     1|
 |4     |BUFIO                          |     2|
-|5     |CARRY4                         |  1626|
+|5     |CARRY4                         |  1638|
 |6     |CFGLUT5                        |  1984|
 |7     |GTPE2_CHANNEL                  |     2|
 |8     |GTPE2_COMMON                   |     1|
@@ -946,60 +946,61 @@ Report Cell Usage:
 |12    |IDELAYE2                       |    32|
 |13    |IN_FIFO                        |     4|
 |14    |ISERDESE2                      |    32|
-|15    |LUT1                           |  2014|
-|16    |LUT2                           |  3809|
-|17    |LUT3                           |  7466|
-|18    |LUT4                           |  6189|
-|19    |LUT5                           |  5385|
-|20    |LUT6                           | 10277|
+|15    |LUT1                           |  2013|
+|16    |LUT2                           |  3841|
+|17    |LUT3                           |  7453|
+|18    |LUT4                           |  6197|
+|19    |LUT5                           |  5379|
+|20    |LUT6                           | 10843|
 |21    |MMCME2_ADV                     |     3|
-|22    |MUXF7                          |   592|
-|23    |MUXF8                          |    64|
-|24    |ODDR                           |     9|
-|25    |OSERDESE2                      |    64|
-|26    |OUT_FIFO                       |     7|
-|27    |PCIE_2                         |     1|
-|28    |PHASER_IN_PHY                  |     4|
-|29    |PHASER_OUT_PHY                 |     7|
-|30    |PHASER_REF                     |     2|
-|31    |PHY_CONTROL                    |     2|
-|32    |PLLE2_ADV                      |     1|
-|33    |RAM16X1D                       |    48|
-|34    |RAM16X1S                       |    13|
-|35    |RAM32M                         |   834|
-|36    |RAM32X1D                       |    32|
-|37    |RAM64M                         |    76|
-|38    |RAM64X1S                       |     9|
-|39    |RAMB18E1                       |    12|
-|40    |RAMB36E1                       |    59|
-|41    |SRL16                          |     3|
-|42    |SRL16E                         |   741|
-|43    |SRLC16E                        |     2|
-|44    |SRLC32E                        |   291|
-|45    |XADC                           |     1|
-|46    |FDCE                           |   143|
-|47    |FDPE                           |   139|
-|48    |FDRE                           | 40552|
-|49    |FDSE                           |   410|
-|50    |IBUF                           |     4|
-|51    |IBUFDS                         |     1|
-|52    |IOBUFDS_DIFF_OUT_INTERMDISABLE |     4|
-|53    |IOBUF_INTERMDISABLE            |    32|
-|54    |OBUF                           |    26|
-|55    |OBUFDS                         |     1|
-|56    |OBUFT                          |     5|
+|22    |MUXCY                          |    48|
+|23    |MUXF7                          |   848|
+|24    |MUXF8                          |   192|
+|25    |ODDR                           |     9|
+|26    |OSERDESE2                      |    64|
+|27    |OUT_FIFO                       |     7|
+|28    |PCIE_2                         |     1|
+|29    |PHASER_IN_PHY                  |     4|
+|30    |PHASER_OUT_PHY                 |     7|
+|31    |PHASER_REF                     |     2|
+|32    |PHY_CONTROL                    |     2|
+|33    |PLLE2_ADV                      |     1|
+|34    |RAM16X1D                       |    48|
+|35    |RAM16X1S                       |    13|
+|36    |RAM32M                         |   834|
+|37    |RAM32X1D                       |    32|
+|38    |RAM64M                         |   736|
+|39    |RAM64X1S                       |     9|
+|40    |RAMB18E1                       |    11|
+|41    |RAMB36E1                       |    63|
+|42    |SRL16                          |     3|
+|43    |SRL16E                         |   740|
+|44    |SRLC16E                        |     2|
+|45    |SRLC32E                        |   291|
+|46    |XADC                           |     1|
+|47    |FDCE                           |   143|
+|48    |FDPE                           |   139|
+|49    |FDRE                           | 40848|
+|50    |FDSE                           |   410|
+|51    |IBUF                           |     4|
+|52    |IBUFDS                         |     1|
+|53    |IOBUFDS_DIFF_OUT_INTERMDISABLE |     4|
+|54    |IOBUF_INTERMDISABLE            |    32|
+|55    |OBUF                           |    26|
+|56    |OBUFDS                         |     1|
+|57    |OBUFT                          |     5|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:00 ; elapsed = 00:02:49 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 11853 ; free virtual = 43625
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:19 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 15635 ; free virtual = 46466
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 34136 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:26 ; elapsed = 00:02:24 . Memory (MB): peak = 5257.402 ; gain = 2854.176 ; free physical = 16459 ; free virtual = 48230
-Synthesis Optimization Complete : Time (s): cpu = 00:03:00 ; elapsed = 00:02:53 . Memory (MB): peak = 5257.402 ; gain = 3408.430 ; free physical = 16459 ; free virtual = 48230
+Synthesis finished with 0 errors, 0 critical warnings and 26560 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:00 ; elapsed = 00:01:55 . Memory (MB): peak = 4428.801 ; gain = 2023.574 ; free physical = 20435 ; free virtual = 51266
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:02:23 . Memory (MB): peak = 4428.801 ; gain = 2578.859 ; free physical = 20435 ; free virtual = 51266
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.79 . Memory (MB): peak = 5257.402 ; gain = 0.000 ; free physical = 16350 ; free virtual = 48122
+Netlist sorting complete. Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.79 . Memory (MB): peak = 4428.801 ; gain = 0.000 ; free physical = 20454 ; free virtual = 51285
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 5472 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 6579 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf_0/U0/<const0>.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
@@ -1007,9 +1008,10 @@ INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
 INFO: [Chipscope 16-324] Core: design_1_i/jtag_axi_0 UUID: 53e5f1c3-10b9-52d3-bb10-986c3375587a 
 INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/inst/ila_lib UUID: cd4c83c8-23a6-596d-99ad-09be1335c6b0 
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 32 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5301.508 ; gain = 0.000 ; free physical = 16340 ; free virtual = 48111
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4472.906 ; gain = 0.000 ; free physical = 20461 ; free virtual = 51293
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3036 instances were transformed.
+  A total of 3712 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 16 instances
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 1888 instances
   CFGLUT5 => SRLC32E: 96 instances
   IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 4 instances
@@ -1019,19 +1021,19 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1S => RAM32X1S (RAMS32): 13 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 834 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 76 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 736 instances
   RAM64X1S => RAM64X1S (RAMS64E): 9 instances
   SRL16 => SRL16E: 3 instances
 
-Synth Design complete | Checksum: 8bccce02
+Synth Design complete | Checksum: ebc5010b
 INFO: [Common 17-83] Releasing license: Synthesis
 519 Infos, 516 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:23 ; elapsed = 00:03:15 . Memory (MB): peak = 5301.543 ; gain = 3626.797 ; free physical = 16338 ; free virtual = 48110
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 10168.894; main = 4271.513; forked = 6021.642
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 19573.848; main = 5301.512; forked = 14320.359
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5325.520 ; gain = 0.000 ; free physical = 16336 ; free virtual = 48115
+synth_design: Time (s): cpu = 00:02:58 ; elapsed = 00:02:46 . Memory (MB): peak = 4472.941 ; gain = 2795.258 ; free physical = 20461 ; free virtual = 51292
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 9403.220; main = 3529.067; forked = 6079.408
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 18746.324; main = 4472.910; forked = 14321.438
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4496.918 ; gain = 0.000 ; free physical = 20444 ; free virtual = 51284
 INFO: [Common 17-1381] The checkpoint '/home/kokunev/data/git_root/laser_board_xdma_plus_ddr_2/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 5325.520 ; gain = 23.977 ; free physical = 16176 ; free virtual = 48133
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 4496.918 ; gain = 23.977 ; free physical = 20356 ; free virtual = 51288
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 14:32:02 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 15 09:45:34 2026...
