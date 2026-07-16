@@ -34,8 +34,7 @@ class Jtag2Ddr3Access:
         if( size == -1):
             size = len(value)
         if( size > self.MAX_WR_WORD_CNT):
-            print(f"Warning: size {size} exceeds MAX_WR_WORD_CNT {self.MAX_WR_WORD_CNT}, truncating to {self.MAX_WR_WORD_CNT}")
-            size = self.MAX_WR_WORD_CNT 
+            print(f"Warning: size {size} exceeds MAX_WR_WORD_CNT {self.MAX_WR_WORD_CNT}")
         #print(value[:size])
         self.session.mwr(addr, size=size, words=value[:size], word_size=4)
 
