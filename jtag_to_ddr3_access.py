@@ -56,8 +56,10 @@ class Jtag2Ddr3Access:
             chunk = min(remainder, maxChunkSize)
             # Write the list of words to DDR3 memory and read it back
             wChunk=wList[start:start+chunk]
-            self.writeWordList(addr=self.DDR_BASE+address, value=wChunk, size=chunk)
-            rdList = self.readWordList(addr=self.DDR_BASE+address, size=chunk)
+            memAddr=self.DDR_BASE+address+start
+            #print("Writing {} words to address 0x{:08X}".format(chunk, memAddr))
+            self.writeWordList(addr=memAddr, value=wChunk, size=chunk)
+            rdList = self.readWordList(addr=memAddr, size=chunk)
             # compare
             if( wChunk == rdList):
                 pass
@@ -65,7 +67,7 @@ class Jtag2Ddr3Access:
             else:
                 passed = False
                 # read back again to check for any transient errors
-                rdList2 = self.readWordList(addr=self.DDR_BASE+address, size=chunk)
+                rdList2 = self.readWordList(memAddr, size=chunk)
                 if( rdList2 != rdList):
                     print("Read data is not consistent, possible transient error")
                 for i in range(chunk):
