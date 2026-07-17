@@ -39,16 +39,17 @@ class Jtag2Ddr3Access:
         self.session.mwr(addr, size=size, words=value[:size], word_size=4)
 
     # Test write and read operations for 32-bit words
-    def testWrRdWords(self, address: int = 0, size: int = 32, maxChunkSize: int = MAX_WR_WORD_CNT) -> bool:  
+    def testWrRdWords(self, address: int = 0, size: int = 32, maxChunkSize: int = MAX_WR_WORD_CNT, readOnly: bool = False) -> bool:  
         passed = True
         self.connect()
         wList = []
         # generate a list of random 32-bit words to write to DDR3 memory
-        print("startAddress=0x{:08X}, size={}".format(address, size))
+        # use address as a seed for reproducibility
+        random.seed(address)
         for i in range(size):
             #wList.append(int(i+1))
             wList.append(random.randint(0, 0xFFFFFFFF))
-        print("wList[0]=0x{:08X}, wList[-1]=0x{:08X}".format(wList[0], wList[-1]))
+        print("startAddress=0x{:08X}, size={} wList[0]=0x{:08X}, wList[-1]=0x{:08X}".format(address, size, wList[0], wList[-1]))
         # limit to MAX_WR_WORD_CNT
         remainder = size
         start = 0
@@ -58,7 +59,8 @@ class Jtag2Ddr3Access:
             wChunk=wList[start:start+chunk]
             memAddr=self.DDR_BASE+address+start
             #print("Writing {} words to address 0x{:08X}".format(chunk, memAddr))
-            self.writeWordList(addr=memAddr, value=wChunk, size=chunk)
+            if not readOnly:
+                self.writeWordList(addr=memAddr, value=wChunk, size=chunk)
             rdList = self.readWordList(addr=memAddr, size=chunk)
             # compare
             if( wChunk == rdList):
@@ -77,9 +79,27 @@ class Jtag2Ddr3Access:
             remainder -= chunk
         return passed
 
-def main(size: int = 32):
+    def testAllAddressSpace(self, check_point_cnt: int = 1024) -> bool:
+        passed = True
+        total_mem_size_bytes = 0x40000000  # 1GB
+
+        self.connect()
+        # first pass - write and read back random data
+        addr_step = total_mem_size_bytes // check_point_cnt
+        for i in range(check_point_cnt):
+            # size is in words
+            addr =  i*addr_step  
+            passed &= self.testWrRdWords(address=addr, size=self.MAX_WR_WORD_CNT)
+        # second pass - read only
+        for i in range(check_point_cnt):
+            addr =  i*addr_step
+            passed &= self.testWrRdWords(address=addr, size=self.MAX_WR_WORD_CNT, readOnly=True)
+        return passed
+
+# traverse all memory address space but don't touch every byte
+def main(check_point_cnt: int = 1024) -> bool:
     mem = Jtag2Ddr3Access()
-    return mem.testWrRdWords(address=0, size=size)
+    return mem.testAllAddressSpace(check_point_cnt=check_point_cnt)
 
 if __name__ == "__main__":
     main()
